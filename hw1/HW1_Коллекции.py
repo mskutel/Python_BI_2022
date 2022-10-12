@@ -5,25 +5,12 @@
 
 
 #Dictionaries
-dict_complement = {
-    "A" : "T",
-    "T" : "A",
-    "G" : "C",
-    "C" : "G",
-    "a" : "t",
-    "t" : "a",
-    "g" : "c",
-    "c" : "g"} 
+from typing import Dict
 
-dict_transcibe = {
-    "A" : "A",
-    "T" : "U",
-    "G" : "G",
-    "C" : "C",
-    "a" : "a",
-    "t" : "u",
-    "g" : "g",
-    "c" : "c"} 
+dict_complement: Dict[str, str] = dict(A="T", T="A", G="C", C="G", a="t", t="a", g="c", c="g")
+
+
+dict_transcibe = {'A': "A", 'T': "U", 'G': "G", 'C': "C", 'a': "a", 't': "u", 'g': "g", 'c': "c"} 
 
 
 # In[59]:
