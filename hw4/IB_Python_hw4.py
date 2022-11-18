@@ -42,5 +42,4 @@ def compute_multidimensional_distance(point1, point2):
 
 
 def compute_pair_distances(array):
-    i, j = np.meshgrid(array, array)
-    return abs(i - j)
+    return np.linalg.norm(array[:, None, :] - array[None, :, :], axis=-1)
